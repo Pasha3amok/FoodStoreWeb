@@ -1,18 +1,18 @@
 import {Link} from 'react-router-dom'
 
 function CategoryItem(props) {
-	const {idCategory, strCategory, strCategoryThumb, strCategoryDescription } = props;
+	const {strCategory, strCategoryThumb, strCategoryDescription } = props;
 	return <div className="card">
-		<div class="card">
-        <div class="card-image">
+		<div className="card">
+        <div className="card-image">
           <img src={strCategoryThumb} alt={strCategory}/>
-          <span class="card-title red-text">{strCategory}</span>
         </div>
-        <div class="card-content">
-          <p>{strCategoryDescription}</p>
+        <div className="card-content">
+		<span className="card-title red-text">{strCategory}</span>
+          <p>{strCategoryDescription.slice(0,50)}...</p>
         </div>
 		<div className='card-action'>
-			<Link to={`/category/${idCategory}`} className='btn'>Watch categories</Link>
+			<Link to={`/category/${strCategory}`} className='btn'>Watch categories</Link>
 		</div>
       </div>
 	</div>
