@@ -30,3 +30,17 @@ nav {
 .card-content {
 	flex-grow: 1;
 }
+
+.list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 1rem;
+}
+
+
+.row,
+iframe {
+	width: 600px;
+	height: 350px;
+	margin-bottom: 10rem;
+}

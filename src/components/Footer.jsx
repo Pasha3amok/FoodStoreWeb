@@ -3,7 +3,6 @@ function Footer() {
 		<div className="footer-copyright">
 			<div className="container">
 				{new Date().getFullYear()} Copyright text
-				<a href="#" className="grey-text txt-lighten-4 right">Repo</a>
 			</div>
 		</div>
 	</footer>;

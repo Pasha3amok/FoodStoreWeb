@@ -11,11 +11,7 @@ function Home(){
 		getAllCategories().then(data => {
 			setCatalog(data.categories);
 			setIsLoading(false);
-		})
-		.catch(error => {
-			console.error('Error fetching categories:', error);
-			// Handle errors appropriately (e.g., display an error message)
-		  });
+		});
 	}, []);
 
 	return( <>
