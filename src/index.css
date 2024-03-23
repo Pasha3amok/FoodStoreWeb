@@ -31,10 +31,21 @@ nav {
 	flex-grow: 1;
 }
 
+table,
+th,
+td {
+	border: 1px solid;
+}
 
-.row,
+/* .row,
 iframe {
 	width: 600px;
-	height: 350px;
-	margin-bottom: 10rem;
+	height: 300px;
+} */
+
+.row-youtube {
+	iframe {
+		width: 600px;
+		height: 350px;
+	}
 }

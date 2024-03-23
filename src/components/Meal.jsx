@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 function Meal(props) {
 	const {idMeal,strMeal, strMealThumb} = props;
 	return <div className="card">
-	<div className="card">
 	<div className="card-image">
 	  <img src={strMealThumb} alt={strMeal}/>
 	</div>
@@ -14,7 +13,6 @@ function Meal(props) {
 		<Link to={`/meal/${idMeal}`} className='btn'>Watch recipe.</Link>
 	</div>
   </div>
-</div>
 }
 
 export {Meal};

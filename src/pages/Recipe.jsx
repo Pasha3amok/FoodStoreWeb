@@ -45,7 +45,7 @@ function Recipe() {
 				</table>
 
 				{!recipe.strYouTube ? (
-					<div className='row'>
+					<div className='row row-youtube'>
 						<h5 style={{margin: '2rem 0 1.5rem'}}>Watch video instruction.</h5>
 						<iframe title={idMeal} src={`https://www.youtube.com/embed/${recipe.strYoutube.slice(-11)}`} allowFullScreen/>
 					</div>
