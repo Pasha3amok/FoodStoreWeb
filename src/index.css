@@ -37,11 +37,15 @@ td {
 	border: 1px solid;
 }
 
-/* .row,
-iframe {
-	width: 600px;
-	height: 300px;
-} */
+.saved-meals {
+	position: absolute;
+	margin-right: 10px;
+	right: 5rem;
+
+	cursor: pointer;
+	z-index: 5;
+	padding: 0px 10px 0px 0px;
+}
 
 .row-youtube {
 	iframe {

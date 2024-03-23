@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { SavedMeal } from './SavedMeal';
 
 function Header() {
     return (
@@ -9,6 +10,9 @@ function Header() {
                 </Link>
 
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
+                    <li>
+                        <SavedMeal quantity={10} />
+                    </li>
                     <li>
                         <Link to="/about">About me</Link>
                     </li>

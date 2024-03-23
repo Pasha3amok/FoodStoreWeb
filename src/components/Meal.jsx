@@ -6,12 +6,12 @@ function Meal(props) {
         <div className="card">
             <div className="card-image">
                 <img src={strMealThumb} alt={strMeal} />
+                <button class="btn-floating halfway-fab waves-effect waves-light red">
+                    <i class="material-icons">add</i>
+                </button>
             </div>
             <div className="card-content">
                 <span className="card-title red-text">{strMeal}</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light red">
-                    <i class="material-icons">add</i>
-                </a>
             </div>
             <div className="card-action">
                 <Link to={`/meal/${idMeal}`} className="btn">
