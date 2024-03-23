@@ -8,7 +8,7 @@ import './App.css';
 function App() {
   return (
     <>
-	<Router>
+	<Router basename='/FoodStoreWeb'>
 		<Header />
 		<main className='container content'>
 		<MyRoutes/>
