@@ -4,12 +4,14 @@ import {Footer} from './components/Footer'
 import {MyRoutes} from './components/Routes'
 
 import './App.css';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
     <>
 	<Router basename='/FoodStoreWeb'>
 		<Header />
+		<Sidebar/>
 		<main className='container content'>
 		<MyRoutes/>
 		</main>

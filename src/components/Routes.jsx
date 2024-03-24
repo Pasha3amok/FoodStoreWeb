@@ -6,6 +6,7 @@ import { About } from '../pages/About';
 import { NotFound } from '../pages/NotFound';
 import { Category } from '../pages/Category';
 import { Recipe } from '../pages/Recipe';
+import Sidebar from './Sidebar';
 
 const MyRoutes = () => {
     return (

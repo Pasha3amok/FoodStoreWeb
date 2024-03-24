@@ -31,6 +31,17 @@ nav {
 	flex-grow: 1;
 }
 
+.main-image {
+	display: inline-block;
+}
+
+.add-button {
+	left: 50%;
+	top: 780px;
+	bottom: 1;
+	position: absolute;
+}
+
 table,
 th,
 td {
@@ -47,9 +58,39 @@ td {
 	padding: 0px 10px 0px 0px;
 }
 
-.row-youtube {
-	iframe {
-		width: 600px;
-		height: 350px;
-	}
+.sidebar {
+	position: absolute;
+	background: red;
+	color: aliceblue;
+	height: 100vh;
+	width: 300px;
+}
+
+.top_section {
+	display: flex;
+	align-items: center;
+	padding: 20px 15px;
+}
+
+.bars {
+	display: flex;
+	margin-left: 15px;
+}
+
+.link {
+	display: flex;
+	color: aliceblue;
+	padding: 10px 15px;
+	gap: 15px;
+	transition: all 0.5s;
+}
+
+.link:hover {
+	background: black;
+	color: aliceblue;
+	transition: all 0.5s;
+}
+
+.menu {
+	cursor: pointer;
 }

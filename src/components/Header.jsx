@@ -1,20 +1,18 @@
 import { Link } from 'react-router-dom';
 import { SavedMeal } from './SavedMeal';
+import Sidebar from './Sidebar';
+import { Search } from './Search';
 
 function Header() {
     return (
-        <nav className="red darken-1">
+        <nav className="red darken-1 ">
             <div className="nav-wrapper">
                 <Link to="/" className="brand-logo">
                     FoodStore
                 </Link>
-
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
                     <li>
                         <SavedMeal quantity={10} />
-                    </li>
-                    <li>
-                        <Link to="/about">About me</Link>
                     </li>
                 </ul>
             </div>

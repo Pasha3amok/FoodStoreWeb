@@ -14,7 +14,7 @@ function Search({ callBack = Function.prototype }) {
     };
 
     return (
-        <div className="row">
+        <div className="searcher">
             <div className="input-field col s12">
                 <input
                     type="search"
