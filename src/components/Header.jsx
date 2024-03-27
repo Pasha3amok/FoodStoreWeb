@@ -1,9 +1,5 @@
 import { Link } from 'react-router-dom';
 import { SavedMeal } from './SavedMeal';
-import Sidebar from './Sidebar';
-import { Search } from './Search';
-import { Login } from './Login';
-import { LoginPage } from '../pages/LoginPage';
 
 function Header() {
     return (
