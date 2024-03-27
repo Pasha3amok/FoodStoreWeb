@@ -4,7 +4,7 @@ import { getAllCategories } from '../api';
 import { Preloader } from '../components/Preloader';
 import { CategoryList } from '../components/CategotyList';
 import { Search } from '../components/Search';
-import Sidebar from '../components/Sidebar';
+import { Login } from '../components/Login';
 
 function Home() {
     const [catalog, setCatalog] = useState([]);

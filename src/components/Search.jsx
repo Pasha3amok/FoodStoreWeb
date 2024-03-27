@@ -14,7 +14,7 @@ function Search({ callBack = Function.prototype }) {
     };
 
     return (
-        <div className="searcher">
+        <div className="search">
             <div className="input-field col s12">
                 <input
                     type="search"
@@ -25,7 +25,7 @@ function Search({ callBack = Function.prototype }) {
                     value={value}
                 />
                 <button
-                    className="btn"
+                    className="btn red"
                     style={{
                         position: 'absolute',
                         top: 0,

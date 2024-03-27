@@ -8,15 +8,11 @@ export default function SavedMeal(props) {
         <div className="saved-meals">
             {quantity ? (
                 <div className="row">
-                    <Link>
-                        <i className="material-icons right">bookmark</i>
-                        {quantity}
-                    </Link>
+                    <i className="material-icons right">bookmark</i>
+                    {quantity}
                 </div>
             ) : (
-                <Link>
-                    <i className="material-icons">bookmark_border</i>
-                </Link>
+                <i className="material-icons">bookmark_border</i>
             )}
         </div>
     );

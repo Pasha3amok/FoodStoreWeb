@@ -6,16 +6,18 @@ import { About } from '../pages/About';
 import { NotFound } from '../pages/NotFound';
 import { Category } from '../pages/Category';
 import { Recipe } from '../pages/Recipe';
-import Sidebar from './Sidebar';
+import { Login } from './Login';
+import { LoginPage } from '../pages/LoginPage';
 
 const MyRoutes = () => {
     return (
         <Routes>
-            <Route exact path="/" Component={Home} />
-            <Route path="/About" Component={About} />
-            <Route path="/Category/:name" Component={Category} />
-            <Route path="/Meal/:idMeal" Component={Recipe} />
-            <Route path="*" Component={NotFound} />
+            <Route exact path="/" element={<Home />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Category/:name" element={<Category />} />
+            <Route path="/Meal/:idMeal" element={<Recipe />} />
+            <Route path="/LoginPage" element={<LoginPage />} />
+            <Route path="*" element={<NotFound />} />
         </Routes>
     );
 };

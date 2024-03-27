@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { SavedMeal } from './SavedMeal';
 import Sidebar from './Sidebar';
 import { Search } from './Search';
+import { Login } from './Login';
+import { LoginPage } from '../pages/LoginPage';
 
 function Header() {
     return (
@@ -12,7 +14,9 @@ function Header() {
                 </Link>
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
                     <li>
-                        <SavedMeal quantity={10} />
+                        <Link to="/LoginPage">
+                            <SavedMeal quantity={10} />
+                        </Link>
                     </li>
                 </ul>
             </div>
